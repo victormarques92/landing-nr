@@ -1,8 +1,11 @@
 import styled from 'styled-components';
-import Colors from '../../styles/colors';
+import bg from '../../images/bg.png';
 
 export const Container = styled.div`
-  background-color: ${Colors.secondary};
+  background-image: url(${bg});
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: calc(100vh - 100px);
   width: 100%;
 `;

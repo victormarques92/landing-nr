@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { About, Hero } from '../sections';
+import { About, Footer, Hero, Highlighted } from '../sections';
 
 const Home = () => {
   return (
@@ -12,6 +12,10 @@ const Home = () => {
       <Hero />
 
       <About />
+
+      <Highlighted />
+
+      <Footer />
     </>
   );
 };
