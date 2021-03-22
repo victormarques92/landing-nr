@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import Colors from './colors';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -13,9 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   body,
   html {
-    background-color: ${(props) => props.theme.colors.white};
-    color: ${(props) => props.theme.colors.grey};
-    font-family: 'Montserrat', sans-serif;
+    color: ${Colors.grey};
     font-size: 16px;
   }
 
@@ -33,10 +32,6 @@ const GlobalStyle = createGlobalStyle`
 
   button, a {
     cursor: pointer;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Maven Pro', sans-serif;
   }
 `;
 

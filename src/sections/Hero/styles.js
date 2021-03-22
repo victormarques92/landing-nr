@@ -1,9 +1,8 @@
 import styled from 'styled-components';
+import Colors from '../../styles/colors';
 
 export const Container = styled.div`
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  background-color: #121516;
+  background-color: ${Colors.secondary};
+  height: calc(100vh - 100px);
+  width: 100%;
 `;
