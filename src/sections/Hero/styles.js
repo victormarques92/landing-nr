@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import bg from '../../images/bg.png';
+import Colors from '../../styles/colors';
 
 export const Container = styled.div`
   background-image: url(${bg});
@@ -8,4 +9,29 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   height: calc(100vh - 100px);
   width: 100%;
+`;
+
+export const Covid = styled.div`
+  background-color: ${Colors.black};
+  color: ${Colors.greylight};
+  font-size: 14px;
+  height: 24px;
+  left: -30px;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  top: 22px;
+  transform: rotate(-45deg);
+  transition: 0.5s ease-in-out;
+  width: 126px;
+
+  &:hover {
+    color: ${Colors.white};
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;
+
+export const Nav = styled.div`
+  padding: 10px;
 `;

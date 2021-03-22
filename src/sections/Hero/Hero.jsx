@@ -1,11 +1,15 @@
 import React from 'react';
-
-import { Container } from './styles';
+import * as images from '../../images';
+import { Container, Covid, Nav } from './styles';
 
 const Hero = () => {
   return (
     <Container>
-      <h1>Hero</h1>
+      <Covid>COVID 19</Covid>
+      <Nav>
+        <img src={images.logo} alt="" />
+        <button>enter</button>
+      </Nav>
     </Container>
   );
 };
