@@ -1,5 +1,6 @@
 const Colors = {
   grey: '#222222',
+  greylight: '#777',
 
   primary: 'orange',
   secondary: '#FF8094',
