@@ -88,9 +88,10 @@ export const Credit = styled.div`
 
 export const Btn = styled.div`
   display: flex;
-  justify-content:space-evenly;
-  position: relative;
-  left: -157px;
   margin-left: 10px;
   margin-top: 60px;
+
+  div {
+    margin-right: 30px;
+  }
 `;

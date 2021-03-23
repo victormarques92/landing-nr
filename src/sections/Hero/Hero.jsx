@@ -10,6 +10,7 @@ import {
 } from './styles';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { Button } from '../../components';
+import Colors from '../../styles/colors';
 
 const Hero = () => {
   return (
@@ -45,11 +46,14 @@ const Hero = () => {
             corporativo.
           </p>
         </Credit>
-          <Btn>
-          <Button>Evento</Button>
-
-          <Button>Evento</Button>
-          </Btn>
+        <Btn>
+          <div>
+            <Button bg={Colors.primary}>Evento</Button>
+          </div>
+          <div>
+            <Button bg={Colors.white} color={Colors.black}>Evento</Button>
+          </div>
+        </Btn>
       </Container>
     </Content>
   );
