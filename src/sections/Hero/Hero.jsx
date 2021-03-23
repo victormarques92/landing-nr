@@ -1,16 +1,19 @@
 import React from 'react';
+import Button from '../../components/Button/Button';
 import * as images from '../../images';
-import { Container, Covid, Nav } from './styles';
+import { Container, Content, Covid, Nav } from './styles';
 
 const Hero = () => {
   return (
-    <Container>
+    <Content>
       <Covid>COVID 19</Covid>
-      <Nav>
-        <img src={images.logo} alt="" />
-        <button>enter</button>
-      </Nav>
-    </Container>
+      <Container>
+        <Nav>
+          <img src={images.logo} alt="" />
+          <Button>enter</Button>
+        </Nav>
+      </Container>
+    </Content>
   );
 };
 

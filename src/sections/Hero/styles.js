@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import bg from '../../images/bg.png';
 import Colors from '../../styles/colors';
 
-export const Container = styled.div`
+export const Content = styled.div`
   background-image: url(${bg});
   background-size: cover;
   background-attachment: fixed;
@@ -32,6 +32,20 @@ export const Covid = styled.div`
   }
 `;
 
+export const Container = styled.div`
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+`;
+
 export const Nav = styled.div`
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
+
+  img {
+    width: 180px;
+  }
 `;
