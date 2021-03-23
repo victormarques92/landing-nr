@@ -1,6 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import { About, Footer, Hero, Highlighted } from '../sections';
+import {
+  About,
+  Contacts,
+  Footer,
+  Hero,
+  Highlighted,
+} from '../sections';
 
 const Home = () => {
   return (
@@ -14,6 +20,8 @@ const Home = () => {
       <About />
 
       <Highlighted />
+
+      <Contacts />
 
       <Footer />
     </>
