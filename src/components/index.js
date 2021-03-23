@@ -1,3 +1,4 @@
+import Button from './Button';
 import Twitter from './Twitter';
 
-export { Twitter };
+export { Button, Twitter };
