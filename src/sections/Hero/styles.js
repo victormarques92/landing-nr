@@ -3,9 +3,9 @@ import bg from '../../images/bg.png';
 import Colors from '../../styles/colors';
 
 export const Content = styled.div`
+  background-attachment: fixed;
   background-image: url(${bg});
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   height: calc(100vh - 100px);
   width: 100%;
@@ -33,11 +33,11 @@ export const Covid = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 100%;
   padding-right: 10%;
   padding-left: 10%;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 `;
 
 export const Nav = styled.div`
@@ -52,23 +52,25 @@ export const Nav = styled.div`
 
 export const Credit = styled.div`
   color: ${Colors.white};
+  display:inline-block;
   margin-left: 10px;
   position: relative;
   top: 50px;
 
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
   h2 {
-    font-size: 34px;
+    font-size: 40px;
+    font-weight: 500;
     margin-top: 2px;
   }
 
   h1 {
     color: ${Colors.primary};
-    font-size: 44px;
-  }
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    font-size: 56px;
   }
   span {
     font-size: 10px;
@@ -86,12 +88,13 @@ export const Credit = styled.div`
   }
 `;
 
-export const Btn = styled.div`
+export const Invite = styled.div`
   display: flex;
-  margin-left: 10px;
-  margin-top: 60px;
+  position: absolute;
+  bottom: -50px;
 
-  div {
-    margin-right: 30px;
-  }
+
+div + div{
+  margin-left: 20px;
+}
 `;

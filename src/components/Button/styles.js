@@ -6,7 +6,7 @@ export const Btn = styled.button`
   background-color: ${props =>
     props.bg ? props.bg : Colors.primary};
   border-radius: 4px;
-  color: ${props => (props.bg ? props.bg : Colors.white)};
+  color: ${props => (props.color ? props.color : Colors.white)};
   display: flex;
   padding: 10px;
 

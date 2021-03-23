@@ -1,7 +1,7 @@
 import React from 'react';
 import * as images from '../../images';
 import {
-  Btn,
+  Invite,
   Container,
   Content,
   Covid,
@@ -9,7 +9,7 @@ import {
   Nav,
 } from './styles';
 import { AiFillPlayCircle } from 'react-icons/ai';
-import { Button } from '../../components';
+import { Button, Contador } from '../../components';
 import Colors from '../../styles/colors';
 
 const Hero = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
       <Covid>COVID 19</Covid>
       <Container>
         <Nav>
-          <img src={images.logo} alt="" />
+          <img src={images.logo} alt="logo" />
           <Button>
             <p>Conheça o evento em 60seg</p> <AiFillPlayCircle />
           </Button>
@@ -27,33 +27,34 @@ const Hero = () => {
         <Credit>
           <h3>Credit innovation Summit 2021</h3>
           <h2>11 e 12 de maio</h2>
-          <h1>58 09 55 36 </h1>
-          <div>
-            <span>days</span>
-            <span>hours</span>
-            <span>minutes</span>
-            <span> seconds</span>
-          </div>
+
+          <Contador />
           <h2>
-            Fórum de inovação do mercado <br /> de crédito
-            Brasileiro
+            Fórum de inovação do mercado <br /> de Crédito
+            Corporativo Brasileiro
           </h2>
           <p>
             O <strong>evento online</strong> CREDIT INNOVATION
             SUMMIT 2021 objetiva preencher uma lacuna de mercado
-            <br /> que é a de servir de vitrine e referência para
-            o aspecto tecnológico do universo de crédito
+            que
+            <br /> é a de servir de vitrine e referência para o
+            aspecto tecnológico do universo de crédito
             corporativo.
           </p>
+          <Invite>
+            <div>
+              <Button bg={Colors.primary}>
+                Receber um convite
+              </Button>
+            </div>
+
+            <div>
+              <Button bg={Colors.white} color={Colors.black}>
+                Save the Date
+              </Button>
+            </div>
+          </Invite>
         </Credit>
-        <Btn>
-          <div>
-            <Button bg={Colors.primary}>Evento</Button>
-          </div>
-          <div>
-            <Button bg={Colors.white} color={Colors.black}>Evento</Button>
-          </div>
-        </Btn>
       </Container>
     </Content>
   );

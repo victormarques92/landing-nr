@@ -1,3 +1,4 @@
 import Button from './Button';
+import Contador from './Contador';
 
-export { Button };
+export { Button, Contador };
