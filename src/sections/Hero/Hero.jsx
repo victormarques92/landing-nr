@@ -11,6 +11,7 @@ import {
   Invite,
   Nav,
   Next,
+  Online,
 } from './styles';
 import { Col } from '../../styles';
 
@@ -78,8 +79,10 @@ const Hero = () => {
         </Col>
 
         <Col xs={4}>
-          <img src={images.responsive} />
-          <h6>Evento 100% online</h6>
+          <Online>
+            <img src={images.responsive} />
+            <h6>Evento 100% online</h6>
+          </Online>
         </Col>
       </Container>
 

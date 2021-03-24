@@ -122,11 +122,6 @@ export const Container = styled.div`
       width: 100%;
     }
 
-    h6 {
-      font-size: 16px;
-      text-align: center;
-    }
-
     & > p {
       font-size: 14px;
       margin-top: 12px;
@@ -159,4 +154,12 @@ export const Next = styled.button`
   position: absolute;
   transform: translateX(-50%);
   width: 60px;
+`;
+
+export const Online = styled.div`
+  text-align: center;
+
+  h6 {
+    font-size: 16px;
+  }
 `;

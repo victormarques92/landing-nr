@@ -18,7 +18,7 @@ export const Container = styled.div`
     }
 
     img {
-      max-height: 40px;
+      max-height: 32px;
       margin-left: 32px;
     }
   }
