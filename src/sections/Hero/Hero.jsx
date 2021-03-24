@@ -77,7 +77,7 @@ const Hero = () => {
           </Invite>
         </Col>
 
-        <Col xs="auto">
+        <Col xs={4}>
           <img src={images.responsive} />
           <h6>Evento 100% online</h6>
         </Col>
@@ -129,33 +129,11 @@ const Hero = () => {
 
             <p>
               O evento online{' '}
-              <strong>CREDIT INNOVATION SUMMIT 2021</strong>, 1º.
-              Fórum de inovação do mercado de crédito corporativo
-              brasileiro, objetiva promover a eficiência e a
-              inovação no segmento de crédito corporativo,
-              debatendo práticas e padrões, aproximando empresas,
-              instituições financeiras e provedores de
-              tecnologia, visando proporcionar ao segmento a
-              agilidade de adoção das melhores práticas e
-              soluções de tratamento da informação. Sendo assim,
-              esperamos que o evento seja um marco e beneficie,
-              de uma forma ampla e aberta, todo o ecossistema de
-              crédito corporativo, seja por quem oferece a
-              disponibilidade financeira, seja pelas empresas que
-              precisam deste apoio para investimentos produtivos,
-              equalização do fluxo de caixa e iniciativas de
-              modernização e aperfeiçoamento. Ocorrendo nos dias
-              11 e 12 de maior de 2021, de uma forma gratuita,
-              online e interativa, em horários escolhidos para
-              facilitar a participação dos profissionais do
-              mercado, trará palestrantes e personalidades
-              importantes do meio financeiro em três sessões
-              institucionais de 45 minutos cada, além de 10
-              sessões técnicas cobrindo temas tecnológicos
-              variados e que constam hoje da pauta de
-              modernização do segmento. Diversas novidades serão
-              também anunciadas visando o engajamento das
-              empresas e dos provedores de tecnologia.
+              <strong>CREDIT INNOVATION SUMMIT 2021</strong>,
+              objetiva tratar as demandas de mercado e fomentar
+              soluções inovadoras para o incremento da
+              performance e eficiência do segmento de crédito
+              corporativo brasileiro.
             </p>
 
             <p>

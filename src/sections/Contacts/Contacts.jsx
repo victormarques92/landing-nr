@@ -15,7 +15,7 @@ function Contacts() {
         </Col>
 
         <Col xs={4}>
-          <h3>Receba as informações no seu e-mail</h3>
+          <h3>Receba as informações no seu e-mail:</h3>
 
           <Newslatter />
         </Col>
@@ -29,7 +29,7 @@ function Contacts() {
             atendimento@creditinovation.com.br
           </a>
 
-          <a href="tel:+5511555509834">+ 55 11 5555-09834</a>
+          <a href="tel:+551135828457">(11) 3582-8457</a>
         </Col>
       </Row>
     </Container>

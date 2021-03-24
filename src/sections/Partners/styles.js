@@ -18,8 +18,8 @@ export const Container = styled.div`
     }
 
     img {
-      max-height: 60px;
-      margin-left: 16px;
+      max-height: 40px;
+      margin-left: 32px;
     }
   }
 `;

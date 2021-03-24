@@ -4,7 +4,7 @@ import la_playa from './la_playa.png';
 import logo from './logo.png';
 import google from './google.png';
 import microsoft from './microsoft.png';
-import nota from './nota.jpg';
+import nota from './nota.png';
 import uqbar from './uqbar.png';
 import logoBlack from './logo-black.png';
 import twitter from './twitter.png';
