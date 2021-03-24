@@ -1,8 +1,12 @@
 import React from 'react';
+import { Btn } from './styles';
 
-
-const Button = () => {
-  return <Button />;
-}
+const Button = ({ children, bg, color }) => {
+  return (
+    <Btn bg={bg} color={color}>
+      {children}
+    </Btn>
+  );
+};
 
 export default Button;
