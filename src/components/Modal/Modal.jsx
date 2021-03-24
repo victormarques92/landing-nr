@@ -19,7 +19,7 @@ const Modal = ({ children, onClose, isVideo }) => {
         <FiX />
       </button>
 
-      <main>{children}</main>
+      {isVideo ? children : <main>{children}</main>}
     </Container>
   );
 };

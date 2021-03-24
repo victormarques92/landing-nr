@@ -1,9 +1,9 @@
 import React from 'react';
 import { Btn } from './styles';
 
-const Button = ({ children, bg, primary }) => {
+const Button = ({ children, primary, ...rest }) => {
   return (
-    <Btn bg={bg} primary={primary}>
+    <Btn primary={primary} {...rest}>
       {children}
     </Btn>
   );
