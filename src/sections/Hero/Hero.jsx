@@ -64,10 +64,10 @@ const Hero = () => {
           </h4>
           <p>
             O <strong>evento online</strong> CREDIT INNOVATION
-            SUMMIT 2021 objetiva preencher uma lacuna de mercado
-            que é a de servir de vitrine e referência para o
-            aspecto tecnológico do universo de crédito
-            corporativo.
+            SUMMIT 2021 objetiva tratar as demandas de mercado e
+            fomentar soluções inovadoras para o incremento da
+            performance e eficiência do segmento de crédito
+            corporativo brasileiro.
           </p>
 
           <Invite>
