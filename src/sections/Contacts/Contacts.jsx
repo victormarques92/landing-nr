@@ -1,14 +1,7 @@
 import React from 'react';
-import { Twitter } from '../../components';
+import { Newslatter, Twitter } from '../../components';
 import { Col, Row } from '../../styles';
-import {
-  Apoio,
-  Container,
-  Content,
-  Parceiros,
-  Btn,
-  Contact,
-} from './styles';
+import { Container, Logo } from './styles';
 import * as images from '../../images';
 
 function Contacts() {
@@ -16,50 +9,27 @@ function Contacts() {
     <Container>
       <Row>
         <Col xs={3}>
+          <h3>No Twitter</h3>
+
           <Twitter />
         </Col>
 
         <Col xs={4}>
-          <Content>
-            <h2>Receba as informações no seu e-mail</h2>
+          <h3>Receba as informações no seu e-mail</h3>
 
-            <form>
-              <input
-                type="text"
-                name="name"
-                placeholder="Nome"
-              />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="email"
-              />
-
-              <input
-                type="numer"
-                name="telephone"
-                placeholder="Celular"
-              />
-              <br />
-              <Btn>
-                <input type="submit" value="Enviar" />
-              </Btn>
-            </form>
-          </Content>
+          <Newslatter />
         </Col>
 
         <Col xs={5}>
-          <Content>
-            <img src={images.logoBlack} alt="logo" />
-            <Contact>
-              <h2>Contato</h2>
+          <Logo src={images.logoBlack} alt="logo" />
 
-              <span>atendimento@creditinovation.com.br</span>
+          <h3>Contato</h3>
 
-              <p>+ 55 11 5555-09834</p>
-            </Contact>
-          </Content>
+          <a href="mailto:atendimento@creditinovation.com.br">
+            atendimento@creditinovation.com.br
+          </a>
+
+          <a href="tel:+5511555509834">+ 55 11 5555-09834</a>
         </Col>
       </Row>
     </Container>
