@@ -11,42 +11,69 @@ export const Content = styled.div`
   width: 100%;
 `;
 
-export const Covid = styled.div`
+export const Covid = styled.button`
   background-color: ${Colors.black};
-  color: ${Colors.greylight};
+  color: ${Colors.white};
   font-size: 14px;
   height: 24px;
-  left: -30px;
+  left: -32px;
+  opacity: 0.7;
   padding: 2px;
-  position: relative;
+  position: absolute;
   text-align: center;
   top: 22px;
   transform: rotate(-45deg);
-  transition: 0.5s ease-in-out;
-  width: 126px;
+  transition: 0.15s ease-in-out;
+  width: 140px;
 
   &:hover {
-    color: ${Colors.white};
     cursor: pointer;
-    text-decoration: underline;
+    font-size: 16px;
+    height: 32px;
+    opacity: 1;
+    padding: 6px;
+    top: 20px;
   }
 `;
 
-export const Container = styled.div`
-  padding-right: 5%;
-  padding-left: 5%;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+export const CovidModal = styled.div`
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 1px solid ${Colors.light};
+    margin-bottom: 32px;
+    padding-bottom: 8px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+
+  span {
+    color: ${Colors.greylight};
+    font-size: 14px;
+  }
 `;
 
 export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 32px 0;
 
   img {
-    width: 180px;
+    max-height: 56px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button + button {
+      margin-left: 32px;
+    }
   }
 `;
 

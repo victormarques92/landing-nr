@@ -4,7 +4,7 @@ import { device } from './device';
 
 export const Container = styled.div`
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 
   @media (min-width: 1024px) {
     width: 83.33333%;
