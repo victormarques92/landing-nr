@@ -6,7 +6,7 @@ import * as images from '../../images';
 
 function Contacts() {
   return (
-    <Container>
+    <Container id="contacts">
       <Row>
         <Col xs={3}>
           <h3>No Twitter</h3>

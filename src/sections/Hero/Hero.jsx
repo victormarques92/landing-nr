@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { FiChevronDown, FiDownload } from 'react-icons/fi';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { Button, Contador, Link, Modal } from '../../components';
@@ -18,6 +18,13 @@ const Hero = () => {
   const [openModalCovid, setOpenModalCovid] = useState(false);
   const [openModalEvent, setOpenModalEvent] = useState(false);
   const [openModalVideo, setOpenModalVideo] = useState(false);
+
+  const handleNext = useCallback(() => {
+    const nextElement = document.getElementById('contacts')
+      .offsetTop;
+
+    window.scrollTo(0, nextElement);
+  }, []);
 
   return (
     <Content>
@@ -76,7 +83,7 @@ const Hero = () => {
         </Col>
       </Container>
 
-      <Next>
+      <Next onClick={handleNext}>
         <FiChevronDown />
       </Next>
 
