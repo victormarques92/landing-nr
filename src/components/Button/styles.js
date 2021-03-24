@@ -1,15 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Colors from '../../styles/colors';
 
-export const Btn = styled.button`
+const styles = css`
   align-items: center;
   background-color: ${props =>
-    props.primary ? Colors.primary : Colors.light};
+    props.primary ? Colors.primary : Colors.white};
   border-radius: 8px;
-  color: ${props => (props.color ? props.color : Colors.white)};
+  color: ${props =>
+    props.primary ? Colors.white : Colors.grey};
   display: flex;
   font-size: 18px;
-  padding: 12px;
+  padding: 12px 16px;
   transition: 0.15s ease-in-out;
 
   svg {
@@ -19,4 +20,12 @@ export const Btn = styled.button`
   &:hover {
     filter: brightness(85%);
   }
+`;
+
+export const Btn = styled.button`
+  ${styles}
+`;
+
+export const Anchor = styled.a`
+  ${styles}
 `;

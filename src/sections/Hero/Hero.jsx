@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import * as images from '../../images';
-import {
-  Invite,
-  Content,
-  Covid,
-  Credit,
-  Nav,
-  CovidModal,
-} from './styles';
+import { FiDownload } from 'react-icons/fi';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { Button, Contador, Link, Modal } from '../../components';
-import Colors from '../../styles/colors';
-import { Container } from '../../styles';
+import * as images from '../../images';
+import {
+  Container,
+  Content,
+  Covid,
+  CovidModal,
+  Invite,
+  Nav,
+} from './styles';
 
 const Hero = () => {
   const [openModalCovid, setOpenModalCovid] = useState(false);
@@ -24,58 +23,50 @@ const Hero = () => {
         COVID 19
       </Covid>
 
+      <Nav>
+        <img src={images.logo} alt="logo" />
+
+        <div>
+          <Link onClick={() => setOpenModalEvent(true)}>
+            Sobre o Evento
+          </Link>
+
+          <Button
+            primary
+            onClick={() => setOpenModalVideo(true)}
+          >
+            <span>Conheça o evento em 60seg</span>
+            <AiFillPlayCircle fontSize={20} />
+          </Button>
+        </div>
+      </Nav>
+
       <Container>
-        <Nav>
-          <img src={images.logo} alt="logo" />
-
-          <div>
-            <Link onClick={() => setOpenModalEvent(true)}>
-              Sobre o Evento
-            </Link>
-
-            <Button
-              primary
-              onClick={() => setOpenModalVideo(true)}
-            >
-              <span>Conheça o evento em 60seg</span>
-              <AiFillPlayCircle fontSize={20} />
-            </Button>
-          </div>
-        </Nav>
-
-        <Credit>
+        <div>
           <h3>Credit innovation Summit 2021</h3>
           <h2>11 e 12 de maio</h2>
 
           <Contador />
 
-          <h2>
-            Fórum de inovação do mercado <br /> de Crédito
-            Corporativo Brasileiro
-          </h2>
+          <h4>
+            1º. Fórum de inovação do mercado de crédito
+            corporativo brasileiro
+          </h4>
           <p>
             O <strong>evento online</strong> CREDIT INNOVATION
             SUMMIT 2021 objetiva preencher uma lacuna de mercado
-            que
-            <br /> é a de servir de vitrine e referência para o
+            que é a de servir de vitrine e referência para o
             aspecto tecnológico do universo de crédito
             corporativo.
           </p>
 
-          {/* <Invite>
-            <div>
-              <Button bg={Colors.primary}>
-                Receber um convite
-              </Button>
-            </div>
-
-            <div>
-              <Button bg={Colors.white} color={Colors.black}>
-                Save the Date
-              </Button>
-            </div>
-          </Invite> */}
-        </Credit>
+          <Invite>
+            <Button primary>Receber um convite</Button>
+            <Button download>
+              Save the Date <FiDownload fontSize={20} />
+            </Button>
+          </Invite>
+        </div>
       </Container>
 
       {openModalCovid && (

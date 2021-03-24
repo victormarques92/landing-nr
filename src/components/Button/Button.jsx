@@ -1,7 +1,15 @@
 import React from 'react';
-import { Btn } from './styles';
+import { Anchor, Btn } from './styles';
 
-const Button = ({ children, primary, ...rest }) => {
+const Button = ({ children, primary, download, ...rest }) => {
+  if (download) {
+    return (
+      <Anchor download {...rest}>
+        {children}
+      </Anchor>
+    );
+  }
+
   return (
     <Btn primary={primary} {...rest}>
       {children}
