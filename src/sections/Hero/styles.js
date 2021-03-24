@@ -79,21 +79,20 @@ export const Nav = styled.div`
 
 export const Credit = styled.div`
   color: ${Colors.white};
-  display: inline-block;
-  margin-left: 10px;
-  position: relative;
-  top: 50px;
+  padding-top: 48px;
 
   h3 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
   }
 
   h2 {
     font-size: 40px;
-    font-weight: 500;
-    margin-top: 2px;
+    font-weight: 600;
+    margin-bottom: 16px;
   }
+
+  /* ================== */
 
   h1 {
     color: ${Colors.primary};
@@ -115,12 +114,12 @@ export const Credit = styled.div`
   }
 `;
 
-export const Invite = styled.div`
-  display: flex;
-  position: absolute;
-  bottom: -50px;
+// export const Invite = styled.div`
+//   display: flex;
+//   position: absolute;
+//   bottom: -50px;
 
-  div + div {
-    margin-left: 20px;
-  }
-`;
+//   div + div {
+//     margin-left: 20px;
+//   }
+// `;

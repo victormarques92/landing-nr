@@ -38,7 +38,7 @@ const Hero = () => {
               onClick={() => setOpenModalVideo(true)}
             >
               <span>Conheça o evento em 60seg</span>
-              <AiFillPlayCircle />
+              <AiFillPlayCircle fontSize={20} />
             </Button>
           </div>
         </Nav>
@@ -48,6 +48,7 @@ const Hero = () => {
           <h2>11 e 12 de maio</h2>
 
           <Contador />
+
           <h2>
             Fórum de inovação do mercado <br /> de Crédito
             Corporativo Brasileiro
@@ -60,7 +61,8 @@ const Hero = () => {
             aspecto tecnológico do universo de crédito
             corporativo.
           </p>
-          <Invite>
+
+          {/* <Invite>
             <div>
               <Button bg={Colors.primary}>
                 Receber um convite
@@ -72,7 +74,7 @@ const Hero = () => {
                 Save the Date
               </Button>
             </div>
-          </Invite>
+          </Invite> */}
         </Credit>
       </Container>
 

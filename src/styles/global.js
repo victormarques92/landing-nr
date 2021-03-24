@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     border: 0;
     box-sizing: border-box;
-    font-family: 'FuturaPT Medium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     outline: none !important;
     padding: 0;
@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
   body,
   html {
     color: ${Colors.grey};
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
 
