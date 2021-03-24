@@ -1,7 +1,6 @@
-import About from './About';
 import Contacts from './Contacts';
 import Footer from './Footer';
 import Hero from './Hero';
-import Highlighted from './Highlighted';
+import Partners from './Partners';
 
-export { About, Contacts, Footer, Hero, Highlighted };
+export { Contacts, Footer, Hero, Partners };

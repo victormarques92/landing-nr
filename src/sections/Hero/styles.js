@@ -1,6 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import bg from '../../images/bg.png';
 import Colors from '../../styles/colors';
+
+const bounce = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+`;
 
 export const Content = styled.div`
   align-items: center;
@@ -28,6 +37,7 @@ export const Covid = styled.button`
   transform: rotate(-45deg);
   transition: 0.15s ease-in-out;
   width: 140px;
+  z-index: 1;
 
   &:hover {
     cursor: pointer;
@@ -125,4 +135,20 @@ export const Invite = styled.div`
   a {
     margin-left: 24px;
   }
+`;
+
+export const Next = styled.button`
+  align-items: center;
+  animation: ${bounce} 1s linear infinite;
+  background-color: transparent;
+  bottom: 0;
+  color: ${Colors.white};
+  display: flex;
+  font-size: 100px;
+  height: 80px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 80px;
 `;

@@ -2,24 +2,32 @@ import styled from 'styled-components';
 import { Colors } from '../../styles';
 
 export const Container = styled.div`
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  z-index: 9998;
 
   a {
-    background-color: ${Colors.greylight};
     border-radius: 50%;
-    color: ${Colors.white};
+    color: ${Colors.primary};
+    cursor: pointer;
     display: flex;
-    font-size: 33px;
-    margin-bottom: 14px;
+    font-size: 28px;
+    opacity: 0.7;
     padding: 5px;
     transition: 0.3s ease-in-out;
-    /* position: fixed; */
 
     &:hover {
-      background-color: ${Colors.primary};
-      cursor: pointer;
+      opacity: 1;
+    }
+
+    & + a {
+      margin-top: 8px;
     }
   }
 `;

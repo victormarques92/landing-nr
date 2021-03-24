@@ -14,21 +14,6 @@ import * as images from '../../images';
 function Contacts() {
   return (
     <Container>
-      <Parceiros>
-        <Apoio>
-          <p>Apoio: </p>
-          <img src={images.nota} alt="nota" />
-          <img src={images.microsoft} alt="microsoft" />
-          <img src={images.google} alt="google" />
-          <img src={images.la_playa} alt="laPlaya" />
-        </Apoio>
-
-        <Apoio>
-          <p>Divulgação: </p>
-          <img src={images.uqbar} alt="uqbar" />
-        </Apoio>
-      </Parceiros>
-
       <Row>
         <Col xs={3}>
           <Twitter />
@@ -66,14 +51,14 @@ function Contacts() {
 
         <Col xs={5}>
           <Content>
-            <img src={images.logo} alt="logo"/>
-          <Contact>
-          <h2>Contato</h2>
+            <img src={images.logo} alt="logo" />
+            <Contact>
+              <h2>Contato</h2>
 
-          <span>atendimento@creditinovation.com.br</span>
+              <span>atendimento@creditinovation.com.br</span>
 
-          <p>+ 55 11 5555-09834</p>
-          </Contact>
+              <p>+ 55 11 5555-09834</p>
+            </Contact>
           </Content>
         </Col>
       </Row>

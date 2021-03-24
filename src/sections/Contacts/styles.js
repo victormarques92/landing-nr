@@ -16,24 +16,6 @@ export const Parceiros = styled.div`
   width: 100%;
 `;
 
-export const Apoio = styled.div`
-  display: flex;
-  align-items: center;
-
-  p {
-    color: ${Colors.light};
-    font-size: 18px;
-  }
-
-  img {
-    max-height: 60px;
-    margin-left: 10px;
-  }
-
-  @media (max-width: 1024px) {
-  }
-`;
-
 export const Content = styled.div`
   border-left: 1px solid ${Colors.greylight};
   padding: 0 20px;

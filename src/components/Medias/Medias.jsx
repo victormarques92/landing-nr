@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaWhatsapp,
+  FaShare,
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
@@ -10,18 +10,17 @@ import { Container } from './styles';
 const Medias = () => {
   return (
     <Container>
-
-      <a  href="#" >
-        <FaWhatsapp />
-      </a>
-      <a  href="#">
+      <a href="http://twitter.com/" target="blank">
         <FaTwitter />
       </a>
-      <a  href="#">
+      <a href="https://www.linkedin.com/" target="blank">
         <FaLinkedinIn />
       </a>
-      <a  href="#">
+      <a href="https://instagram.com/" target="blank">
         <FaInstagram />
+      </a>
+      <a href="https://instagram.com/" target="blank">
+        <FaShare />
       </a>
     </Container>
   );

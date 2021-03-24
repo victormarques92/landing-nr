@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiDownload } from 'react-icons/fi';
+import { FiChevronDown, FiDownload } from 'react-icons/fi';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { Button, Contador, Link, Modal } from '../../components';
 import * as images from '../../images';
@@ -10,6 +10,7 @@ import {
   CovidModal,
   Invite,
   Nav,
+  Next,
 } from './styles';
 
 const Hero = () => {
@@ -68,6 +69,10 @@ const Hero = () => {
           </Invite>
         </div>
       </Container>
+
+      <Next>
+        <FiChevronDown />
+      </Next>
 
       {openModalCovid && (
         <Modal onClose={() => setOpenModalCovid(false)}>
