@@ -15,6 +15,7 @@ export const Cont = styled.div`
     p {
       color: ${Colors.white};
       font-size: 12px;
+      margin-top: 0 !important;
       opacity: 0.4;
     }
 

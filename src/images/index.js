@@ -8,6 +8,7 @@ import nota from './nota.jpg';
 import uqbar from './uqbar.png';
 import logoBlack from './logo-black.png';
 import twitter from './twitter.png';
+import responsive from './evento.png';
 
 export {
   bgAbout,
@@ -20,4 +21,5 @@ export {
   uqbar,
   logoBlack,
   twitter,
+  responsive,
 };

@@ -12,6 +12,7 @@ import {
   Nav,
   Next,
 } from './styles';
+import { Col } from '../../styles';
 
 const Hero = () => {
   const [openModalCovid, setOpenModalCovid] = useState(false);
@@ -43,7 +44,7 @@ const Hero = () => {
       </Nav>
 
       <Container>
-        <div>
+        <Col>
           <h3>Credit innovation Summit 2021</h3>
           <h2>11 e 12 de maio</h2>
 
@@ -67,7 +68,12 @@ const Hero = () => {
               Save the Date <FiDownload fontSize={20} />
             </Button>
           </Invite>
-        </div>
+        </Col>
+
+        <Col xs="auto">
+          <img src={images.responsive} />
+          <h6>Evento 100% online</h6>
+        </Col>
       </Container>
 
       <Next>

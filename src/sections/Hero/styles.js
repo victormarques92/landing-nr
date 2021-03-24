@@ -12,13 +12,14 @@ const bounce = keyframes`
 `;
 
 export const Content = styled.div`
-  align-items: center;
+  align-items: baseline;
   background-attachment: fixed;
   background-image: url(${bg});
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   height: calc(100vh - 100px);
+  padding-top: 120px;
   position: relative;
   width: 100%;
 `;
@@ -95,7 +96,9 @@ export const Nav = styled.div`
 `;
 
 export const Container = styled.div`
+  align-items: center;
   color: ${Colors.white};
+  display: flex;
   margin: 0 auto;
   padding-top: 24px;
   width: 90%;
@@ -117,6 +120,11 @@ export const Container = styled.div`
       margin-top: 12px;
       max-width: 660px;
       width: 100%;
+    }
+
+    h6 {
+      font-size: 16px;
+      text-align: center;
     }
 
     & > p {
@@ -144,11 +152,11 @@ export const Next = styled.button`
   bottom: 0;
   color: ${Colors.white};
   display: flex;
-  font-size: 100px;
-  height: 80px;
+  font-size: 60px;
+  height: 60px;
   justify-content: center;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: 80px;
+  width: 60px;
 `;
