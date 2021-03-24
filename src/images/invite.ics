@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20210311T140000Z
+DTEND:20210311T150000Z
+DTSTAMP:20210309T014938Z
+ORGANIZER;CN=johnatan@distrito.me:mailto:johnatan@distrito.me
+UID:42cnqksqvl8rcluatgnq3omcbv@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Carlos Alberto;X-NUM-GUESTS=0:mailto:asant@ecorp.com.br
+X-MICROSOFT-CDO-OWNERAPPTID:1957789563
+CREATED:20210309T014911Z
+DESCRIPTION:Local: Esta é uma conferência on-line via Zoom.\n\nVocê pode pa
+ rticipar desta reunião do seu computador\, tablet ou smartphone.\nhttps://z
+ oom.us/j/97566986400\n\nVocê também pode participar discando em seu telefon
+ e.\nUS: +1 301 715 8592\, +1 312 626 6799\, +1 646 558 8656\, +1 253 215 87
+ 82\, +1 346 248 7799\, +1 669 900 9128\nID da reunião: 975-669-86400\n\nEnc
+ ontre seu número local: https://zoom.us/u/ac4dJfDehE\n\nDescrição do tipo d
+ e evento:\nConvidada: Monnaliza Medeiros (https://www.linkedin.com/in/monna
+ lizadm/)\n\n\nCronograma:\n\n* Introdução\n* O que é Pitch?\n* Tipos de Pit
+ ch\n* Estruturas de Pitch\n\n\n\n+ Informações:\n\n\nTenha papel e caneta p
+ ara registrar todo o aprendizado! Caso queira gravar o bate-papo\, question
+ e ao mentor se é permitido.\n\n\n\n+ Informações:\n\n\nFique por dentro dos
+  eventos do Distrito clicando aqui (http://www.distrito.me/eventos) .\n\n\n
+ \n#eventosonline #distrito#pitch\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nNão edite esta seção da d
+ escrição.\n\nVisualize o seu evento em https://calendar.google.com/calendar
+ /event?action=VIEW&eid=NDJjbnFrc3F2bDhyY2x1YXRnbnEzb21jYnYgYXNhbnRAZWNvcnAu
+ Y29tLmJy&tok=MjAjam9obmF0YW5AZGlzdHJpdG8ubWUzMDljMmQ1NDI2MGEyMWE5N2ZhNmNkYz
+ VjZjE4MTI1NWU2YmNhODFk&ctz=America%2FSao_Paulo&hl=pt_BR&es=1.\n-::~:~::~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20210309T014935Z
+LOCATION:https://zoom.us/j/97566986400
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Treinamento de Pitch  
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
