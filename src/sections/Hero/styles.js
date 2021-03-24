@@ -105,18 +105,19 @@ export const Container = styled.div`
 
   div {
     h3 {
-      font-size: 20px;
+      font-size: 14px;
       font-weight: 500;
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 600;
     }
 
     h4 {
-      font-size: 38px;
+      font-size: 32px;
       font-weight: 600;
+      line-height: 30px;
       margin-top: 12px;
       max-width: 660px;
       width: 100%;

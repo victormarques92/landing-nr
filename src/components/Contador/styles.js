@@ -7,15 +7,15 @@ export const Cont = styled.div`
 
   div {
     color: ${Colors.primary};
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 56px;
+    font-family: 'Goldman', sans-serif;
+    font-size: 48px;
     font-weight: 500;
     width: 94px;
 
     p {
       color: ${Colors.white};
-      font-size: 12px;
-      margin-top: 0 !important;
+      font-size: 8px !important;
+      margin-top: -6px !important;
       opacity: 0.4;
     }
 

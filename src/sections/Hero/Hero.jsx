@@ -59,7 +59,7 @@ const Hero = () => {
           <Contador />
 
           <h4>
-            1º. Fórum de inovação do mercado de crédito
+            1º. Fórum de inovação do mercado <br /> de crédito
             corporativo brasileiro
           </h4>
           <p>
@@ -71,7 +71,7 @@ const Hero = () => {
           </p>
 
           <Invite>
-            <Button primary>Receber um convite</Button>
+            <Button primary>Convite Gratuito</Button>
             <Button download>
               Save the Date <FiDownload fontSize={20} />
             </Button>

@@ -34,7 +34,7 @@ const Contador = () => {
           {minutes > 0 && (
             <div>
               {minutes < 10 ? `0${minutes}` : minutes}
-              <p>Minutos</p>
+              <p>MINUTOS</p>
             </div>
           )}
 
