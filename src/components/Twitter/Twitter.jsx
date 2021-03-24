@@ -1,9 +1,10 @@
 import React from 'react';
+import { twitter } from '../../images';
 
 // import { Container } from './styles';
 
 function Twitter() {
-  return <h1>Twitter</h1>;
+  return <img src={twitter} alt="" />;
 }
 
 export default Twitter;

@@ -1,12 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import {
-  About,
-  Contacts,
-  Footer,
-  Hero,
-  Highlighted,
-} from '../sections';
+import { Contacts, Footer, Hero, Partners } from '../sections';
 
 const Home = () => {
   return (
@@ -17,9 +11,7 @@ const Home = () => {
 
       <Hero />
 
-      <About />
-
-      <Highlighted />
+      <Partners />
 
       <Contacts />
 

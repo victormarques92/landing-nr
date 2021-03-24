@@ -1,9 +1,17 @@
 import React from 'react';
-import { Btn } from './styles';
+import { Anchor, Btn } from './styles';
 
-const Button = ({ children, bg, color }) => {
+const Button = ({ children, primary, download, ...rest }) => {
+  if (download) {
+    return (
+      <Anchor download {...rest}>
+        {children}
+      </Anchor>
+    );
+  }
+
   return (
-    <Btn bg={bg} color={color}>
+    <Btn primary={primary} {...rest}>
       {children}
     </Btn>
   );

@@ -1,8 +1,9 @@
 const Colors = {
   grey: '#222222',
   greylight: '#777',
+  light: '#bbb',
 
-  primary: 'orange',
+  primary: '#ff6108',
   secondary: '#FF8094',
 
   success: '#2c8d54',

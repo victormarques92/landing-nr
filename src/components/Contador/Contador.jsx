@@ -3,8 +3,7 @@ import Countdown from 'react-countdown';
 import { Cont } from './styles';
 
 const Contador = () => {
-  // Random component
-  const Completionist = () => <span>Começou !</span>;
+  const Completionist = () => <span>Começou!</span>;
 
   const renderer = ({
     days,
@@ -14,19 +13,34 @@ const Contador = () => {
     completed,
   }) => {
     if (completed) {
-      // Render a complete state
       return <Completionist />;
     } else {
-      // Render a countdown
       return (
         <Cont>
-          {days} {hours} {minutes}{' '}
-          {seconds < 10 ? `0${seconds}` : seconds}
+          {days > 0 && (
+            <div>
+              {days}
+              <p>DIAS</p>
+            </div>
+          )}
+
+          {hours > 0 && (
+            <div>
+              {hours < 10 ? `0${hours}` : hours}
+              <p>HORAS</p>
+            </div>
+          )}
+
+          {minutes > 0 && (
+            <div>
+              {minutes < 10 ? `0${minutes}` : minutes}
+              <p>Minutos</p>
+            </div>
+          )}
+
           <div>
-            <p>Days</p>
-            <p>Hours</p>
-            <p>minutes</p>
-            <p>Second</p>
+            {seconds < 10 ? `0${seconds}` : seconds}
+            <p>SEGUNDOS</p>
           </div>
         </Cont>
       );
@@ -35,7 +49,7 @@ const Contador = () => {
 
   return (
     <Countdown
-      date={Date.now() + 5000000000}
+      date={new Date('2021-05-12T12:00:00Z')}
       renderer={renderer}
     />
   );

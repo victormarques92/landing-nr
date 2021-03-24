@@ -1,99 +1,162 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import bg from '../../images/bg.png';
 import Colors from '../../styles/colors';
 
+const bounce = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+`;
+
 export const Content = styled.div`
+  align-items: baseline;
   background-attachment: fixed;
   background-image: url(${bg});
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
   height: calc(100vh - 100px);
+  padding-top: 120px;
+  position: relative;
   width: 100%;
 `;
 
-export const Covid = styled.div`
+export const Covid = styled.button`
   background-color: ${Colors.black};
-  color: ${Colors.greylight};
+  color: ${Colors.white};
   font-size: 14px;
   height: 24px;
-  left: -30px;
+  left: -32px;
+  opacity: 0.7;
   padding: 2px;
-  position: relative;
+  position: absolute;
   text-align: center;
   top: 22px;
   transform: rotate(-45deg);
-  transition: 0.5s ease-in-out;
-  width: 126px;
+  transition: 0.15s ease-in-out;
+  width: 140px;
+  z-index: 1;
 
   &:hover {
-    color: ${Colors.white};
     cursor: pointer;
-    text-decoration: underline;
+    font-size: 16px;
+    height: 32px;
+    opacity: 1;
+    padding: 6px;
+    top: 20px;
   }
 `;
 
-export const Container = styled.div`
-  padding-right: 5%;
-  padding-left: 5%;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+export const CovidModal = styled.div`
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 1px solid ${Colors.light};
+    margin-bottom: 32px;
+    padding-bottom: 8px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+
+  span {
+    color: ${Colors.greylight};
+    font-size: 14px;
+  }
 `;
 
 export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  left: 0;
+  padding: 32px 5%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 
   img {
-    width: 180px;
+    max-height: 56px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button + button {
+      margin-left: 32px;
+    }
   }
 `;
 
-export const Credit = styled.div`
+export const Container = styled.div`
+  align-items: center;
   color: ${Colors.white};
-  display: inline-block;
-  margin-left: 10px;
-  position: relative;
-  top: 50px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 24px;
+  width: 90%;
 
-  h3 {
-    font-size: 17px;
-    font-weight: 500;
-  }
-
-  h2 {
-    font-size: 40px;
-    font-weight: 500;
-    margin-top: 2px;
-  }
-
-  h1 {
-    color: ${Colors.primary};
-    font-size: 56px;
-  }
-  span {
-    font-size: 10px;
-    display: flex;
-    margin-left: 14px;
-
-    & + span {
-      margin-left: 38px;
+  div {
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
     }
-  }
 
-  p {
-    font-size: 12px;
-    line-height: 14px;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 38px;
+      font-weight: 600;
+      margin-top: 12px;
+      max-width: 660px;
+      width: 100%;
+    }
+
+    h6 {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    & > p {
+      font-size: 14px;
+      margin-top: 12px;
+      max-width: 710px;
+      width: 100%;
+    }
   }
 `;
 
 export const Invite = styled.div`
   display: flex;
-  position: absolute;
-  bottom: -50px;
+  margin-top: 28px;
 
-  div + div {
-    margin-left: 20px;
+  a {
+    margin-left: 24px;
   }
+`;
+
+export const Next = styled.button`
+  align-items: center;
+  animation: ${bounce} 1s linear infinite;
+  background-color: transparent;
+  bottom: 0;
+  color: ${Colors.white};
+  display: flex;
+  font-size: 60px;
+  height: 60px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60px;
 `;
