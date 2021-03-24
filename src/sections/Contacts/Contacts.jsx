@@ -51,7 +51,7 @@ function Contacts() {
 
         <Col xs={5}>
           <Content>
-            <img src={images.logo} alt="logo" />
+            <img src={images.logoBlack} alt="logo" />
             <Contact>
               <h2>Contato</h2>
 

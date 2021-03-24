@@ -6,6 +6,8 @@ import google from './google.png';
 import microsoft from './microsoft.png';
 import nota from './nota.jpg';
 import uqbar from './uqbar.png';
+import logoBlack from './logo-black.png';
+import twitter from './twitter.png';
 
 export {
   bgAbout,
@@ -16,4 +18,6 @@ export {
   microsoft,
   nota,
   uqbar,
+  logoBlack,
+  twitter,
 };

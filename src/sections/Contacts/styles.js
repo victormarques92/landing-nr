@@ -32,6 +32,10 @@ export const Content = styled.div`
     padding: 6px;
     width: 100%;
   }
+
+  img {
+    max-height: 70px;
+  }
 `;
 
 export const Btn = styled.button`
