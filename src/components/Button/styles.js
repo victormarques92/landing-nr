@@ -22,10 +22,9 @@ const styles = css`
   }
 `;
 
-export const Btn = styled.button`
-  ${styles}
-`;
-
-export const Anchor = styled.a`
-  ${styles}
+export const Container = styled.div`
+  a,
+  button {
+    ${styles}
+  }
 `;

@@ -71,7 +71,9 @@ const Hero = () => {
           </p>
 
           <Invite>
-            <Button primary>Convite Gratuito</Button>
+            <Button href="/invite" primary>
+              Convite Gratuito.
+            </Button>
             <Button download>
               Save the Date <FiDownload fontSize={20} />
             </Button>

@@ -15,25 +15,6 @@ export const Container = styled.div`
   width: 100vw;
   z-index: 9999;
 
-  button {
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    color: ${Colors.light};
-    font-size: 32px;
-    height: 40px;
-    justify-content: center;
-    position: fixed;
-    right: 16px;
-    top: 16px;
-    transition: 0.15s ease-in-out;
-    width: 40px;
-
-    &:hover {
-      filter: brightness(85%);
-    }
-  }
-
   main {
     background-color: ${Colors.white};
     border-radius: 8px;
@@ -59,5 +40,24 @@ export const Container = styled.div`
       border-radius: 8px;
       background: ${Colors.light};
     }
+  }
+`;
+
+export const Close = styled.button`
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  color: ${Colors.light};
+  font-size: 32px;
+  height: 40px;
+  justify-content: center;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  transition: 0.15s ease-in-out;
+  width: 40px;
+
+  &:hover {
+    filter: brightness(85%);
   }
 `;
