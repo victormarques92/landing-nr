@@ -19,6 +19,8 @@ function Newslatter() {
 
   return (
     <Container>
+      <h1>Formulario</h1>
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <BoxInput>
           <input
@@ -27,7 +29,7 @@ function Newslatter() {
             placeholder="Nome"
             ref={register({ required: true })}
           />
-          {errors.name && <p>{errors.name?.message}</p>}
+          {errors.name && <p>{'Digite seu nome '}</p>}
         </BoxInput>
         <BoxInput>
           <input
@@ -36,7 +38,7 @@ function Newslatter() {
             placeholder="E-mail"
             ref={register({ required: true })}
           />
-          {errors.name && <p>{errors.email?.message}</p>}
+          {errors.name && <p>{'Digite seu email'}</p>}
         </BoxInput>
         <BoxInput>
           <input
@@ -45,7 +47,7 @@ function Newslatter() {
             placeholder="Telefone"
             ref={register({ required: true })}
           />
-          {errors.phone && <p>{errors.phone?.message}</p>}
+          {errors.phone && <p>{'Digite seu telefone'}</p>}
         </BoxInput>
         <BoxInput>
           <input
@@ -54,7 +56,7 @@ function Newslatter() {
             placeholder="Empresa"
             ref={register({ required: true })}
           />
-          {errors.company && <p>{errors.company?.message}</p>}
+          {errors.company && <p>{'Digite sua empresa'}</p>}
         </BoxInput>
         <BoxInput>
           <input
@@ -63,15 +65,19 @@ function Newslatter() {
             placeholder="Segmento"
             ref={register({ required: true })}
           />
-          {errors.segmento && <p>{errors.segmento?.message}</p>}
+          {errors.segmento && <p>{'Digite seu segmento'}</p>}
         </BoxInput>
 
         <Check>
-          <label for="cars">Area:</label>
+          <label for="service" htmlFor="service">
+            Area:
+          </label>
           <select name="service">
-            {Professions.map(item => (
+            {Professions.map((item, key) => (
               <option
+                name="service"
                 ref={register({ required: true })}
+                key={key.id}
                 value={item.title}
               >
                 {item.title}
@@ -88,14 +94,19 @@ function Newslatter() {
             <input
               type="checkbox"
               name="termo"
-              value="Termo"
+              value="termo"
               id="termo"
+              ref={register({ required: true })}
             />
             Aceito os termos da política de sigilo e
             confidencialidade (vide link).
           </label>
           {errors.profession && (
-            <p>{errors.profession?.message}</p>
+            <p>
+              {
+                'Para receber o convite é preciso aceitar os Termos da política de sigilo e confidencialidade'
+              }
+            </p>
           )}
         </Check>
 

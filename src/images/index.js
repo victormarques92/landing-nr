@@ -7,7 +7,6 @@ import microsoft from './microsoft.png';
 import nota from './nota.png';
 import uqbar from './uqbar.png';
 import logoBlack from './logo-black.png';
-import twitter from './twitter.png';
 import responsive from './evento.png';
 
 export {
@@ -20,6 +19,5 @@ export {
   nota,
   uqbar,
   logoBlack,
-  twitter,
   responsive,
 };

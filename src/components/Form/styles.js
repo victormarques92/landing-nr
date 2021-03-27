@@ -5,6 +5,12 @@ export const Container = styled.div`
   form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 82%;
+  }
+
+  h1 {
     margin-top: 20px;
   }
 `;
@@ -42,7 +48,7 @@ export const Check = styled.div`
   select {
     border: 1px solid ${Colors.greylight};
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px 8px;
     padding: 2px;
   }

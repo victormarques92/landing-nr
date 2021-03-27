@@ -11,8 +11,6 @@ const Home = () => {
         <title>Credit Innovation</title>
       </Head>
 
-      <h1>Formulario</h1>
-
       <Form />
 
       <Footer />
