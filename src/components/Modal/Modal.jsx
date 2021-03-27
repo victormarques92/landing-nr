@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from 'react';
 import { FiX } from 'react-icons/fi';
 
-import { Container } from './styles';
+import { Close, Container } from './styles';
 
 const Modal = ({ children, onClose, isVideo }) => {
   const handleClose = useCallback(() => {
@@ -15,9 +15,9 @@ const Modal = ({ children, onClose, isVideo }) => {
 
   return (
     <Container isVideo={isVideo}>
-      <button onClick={() => handleClose()}>
+      <Close onClick={() => handleClose()}>
         <FiX />
-      </button>
+      </Close>
 
       {isVideo ? children : <main>{children}</main>}
     </Container>

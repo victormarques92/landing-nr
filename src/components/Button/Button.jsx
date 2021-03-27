@@ -1,19 +1,38 @@
 import React from 'react';
-import { Anchor, Btn } from './styles';
+import { Container } from './styles';
+import Link from 'next/link';
 
-const Button = ({ children, primary, download, ...rest }) => {
+const Button = ({
+  children,
+  primary,
+  download,
+  href,
+  ...rest
+}) => {
   if (download) {
     return (
-      <Anchor download {...rest}>
-        {children}
-      </Anchor>
+      <Container primary={primary}>
+        <a download {...rest}>
+          {children}
+        </a>
+      </Container>
+    );
+  }
+
+  if (href) {
+    return (
+      <Container primary={primary}>
+        <Link href={href} {...rest}>
+          {children}
+        </Link>
+      </Container>
     );
   }
 
   return (
-    <Btn primary={primary} {...rest}>
-      {children}
-    </Btn>
+    <Container primary={primary}>
+      <button {...rest}>{children}</button>
+    </Container>
   );
 };
 
