@@ -80,6 +80,19 @@ export const Nav = styled.div`
   top: 0;
   width: 100%;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      /* max-width: 100%; */
+    }
+
+    div {
+      flex-direction: column-reverse;
+    }
+  }
+
   img {
     max-height: 56px;
   }

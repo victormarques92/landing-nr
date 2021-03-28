@@ -32,7 +32,7 @@ export const PoliticaModal = styled.div`
     padding-bottom: 8px;
   }
 
-  h4 {
+  h3 {
     line-height: 34px;
   }
 

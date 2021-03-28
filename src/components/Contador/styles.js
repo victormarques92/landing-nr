@@ -5,6 +5,12 @@ export const Cont = styled.div`
   display: flex;
   text-align: center;
 
+  @media (max-width: 768px) {
+    div {
+      font-size: 34px !important;
+    }
+  }
+
   div {
     color: ${Colors.primary};
     font-family: 'Goldman', sans-serif;

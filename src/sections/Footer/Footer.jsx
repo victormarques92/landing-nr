@@ -56,7 +56,7 @@ const Footer = () => {
               não acesse nossa plataforma.
             </p>
 
-            <h4>1. Coleta de Informações</h4>
+            <h3>1. Coleta de Informações</h3>
 
             <p>
               Como usuário, você será solicitado a fornecer
@@ -69,7 +69,7 @@ const Footer = () => {
               outros.
             </p>
 
-            <h4>2. Uso das Informações Coletadas</h4>
+            <h3>2. Uso das Informações Coletadas</h3>
 
             <p>
               A Credit Innovation Alliance irá utilizar os dados
@@ -138,7 +138,7 @@ const Footer = () => {
               atingir as finalidades exigidas.
             </p>
 
-            <h4>3. Dados de Acesso</h4>
+            <h3>3. Dados de Acesso</h3>
 
             <p>
               Ao se registrar na Credit Innovation Alliance, você
@@ -175,7 +175,7 @@ const Footer = () => {
               oferecer conteúdos baseados na sua preferência.
             </p>
 
-            <h4>4. Cookies</h4>
+            <h3>4. Cookies</h3>
 
             <p>
               Cookies são pequenos arquivos que os sites que você
@@ -206,7 +206,7 @@ const Footer = () => {
               oferecer conteúdos baseados na sua preferência.
             </p>
 
-            <h4>5. Proteção das suas Informações e Segurança</h4>
+            <h3>5. Proteção das suas Informações e Segurança</h3>
 
             <p>
               A Credit Innovation Alliance considera a segurança
@@ -303,10 +303,10 @@ const Footer = () => {
               Credit Innovation Alliance .
             </p>
 
-            <h4>
+            <h3>
               6. Atualização e Mudanças na Política de
               Privacidade
-            </h4>
+            </h3>
 
             <p>
               A Credit Innovation Alliance poderá modificar sua
@@ -320,7 +320,7 @@ const Footer = () => {
               nosso site.
             </p>
 
-            <h4>7. Cancelamento de Subscrição</h4>
+            <h3>7. Cancelamento de Subscrição</h3>
 
             <p>
               Você pode, a qualquer momento optar por sair de
@@ -330,7 +330,7 @@ const Footer = () => {
               de Subscrição no e-mail que você recebeu.
             </p>
 
-            <h4>8. Da controvérsia</h4>
+            <h3>8. Da controvérsia</h3>
 
             <p>
               Se em algum momento, qualquer disposição (ou parte
@@ -344,7 +344,7 @@ const Footer = () => {
               termos de uso.
             </p>
 
-            <h4>9. Contato</h4>
+            <h3>9. Contato</h3>
 
             <p>
               Entre em contato, a qualquer momento, por meio de 

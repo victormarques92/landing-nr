@@ -13,6 +13,13 @@ const styles = css`
   padding: 12px 16px;
   transition: 0.15s ease-in-out;
 
+  @media (max-width: 768px) {
+    margin: 20px 0;
+    span {
+      font-size: 12px;
+    }
+  }
+
   svg {
     margin-left: 12px;
   }
