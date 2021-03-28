@@ -52,7 +52,7 @@ const Hero = () => {
       </Nav>
 
       <Container>
-        <Col md={4}>
+        <Col xl={12}>
           <h3>Credit innovation Summit 2021</h3>
           <h2>11 e 12 de maio</h2>
 

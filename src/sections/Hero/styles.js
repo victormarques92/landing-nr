@@ -21,7 +21,7 @@ export const Content = styled.div`
   height: calc(100vh - 100px);
   padding-top: 120px;
   position: relative;
-  width: 100%;
+  max-width: 100%;
 `;
 
 export const Covid = styled.button`
@@ -85,7 +85,7 @@ export const Nav = styled.div`
     align-items: center;
 
     img {
-      /* max-width: 100%; */
+      max-width: 100%;
     }
 
     div {
@@ -100,10 +100,10 @@ export const Nav = styled.div`
   div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    button + button {
-      margin-left: 32px;
+    & > div {
+      margin-left: 24px;
     }
   }
 `;
@@ -149,7 +149,7 @@ export const Invite = styled.div`
   display: flex;
   margin-top: 28px;
 
-  a {
+  div + div {
     margin-left: 24px;
   }
 `;

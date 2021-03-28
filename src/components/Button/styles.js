@@ -15,6 +15,7 @@ const styles = css`
 
   @media (max-width: 768px) {
     margin: 20px 0;
+
     span {
       font-size: 12px;
     }
